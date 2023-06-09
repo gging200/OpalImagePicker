@@ -2,6 +2,9 @@ import PackageDescription
 
 let package = Package(
     name: "OpalImagePicker"
+    platforms: [
+        .iOS(.v9),
+    ],
     products: [
         .library(
             name: "OpalImagePicker"
@@ -13,5 +16,6 @@ let package = Package(
             name: "OpalImagePicker"
             path: "OpalImagePicker/Source"
         )
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
